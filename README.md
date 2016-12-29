@@ -40,5 +40,10 @@ import {FormModule} from '@angular/forms';
 vscode: do not show certain files  
 in settings.json
 ```
-
+{
+  "files.exclude":{
+    "**/app/**/*.js":true,
+    "**/*.map":true,
+  }
+}
 ```
