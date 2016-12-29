@@ -30,3 +30,15 @@ import {FormModule} from '@angular/forms';
   ]
 })
 ```
+###5 Transforming Data with Pipes
+####03:31
+```
+{{product.price|currency:'USD':true:'1.2-2'}}
+```
+##7. More on Components
+###2 Defining Interfaces
+vscode: do not show certain files  
+in settings.json
+```
+
+```
