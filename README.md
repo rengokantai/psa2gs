@@ -47,3 +47,50 @@ in settings.json
   }
 }
 ```
+###6 Relative Paths with Module Id
+we can use relative path(s)
+```
+@Component({
+  moduleId:module.id,
+  templateUrl:'product-list.component.html',
+  styleUrls:['product-list.component.css']
+})
+```
+##8. Building Nested Components
+###3 Using a Nested Component
+```
+import {Component,OnChanges} from '@angular/core';
+export class StarComponent implement OnChanges{
+  ngOnChanges():void{
+    this.starWidth = this.rating*86/5;
+  }
+}
+```
+###4 Passing Data to a Nested Component Using @Input
+passing data from container component to child component.
+put property in template
+```
+<ai-star  [rating]="">
+```
+put @Input in child component
+```
+@Component({
+  selector:'ai-star',
+  templateUrl:''
+})
+export class StarComponent{
+  @Input() rating:number;
+  starWidth:number;
+}
+```
+###5 Passing Data from a Component Using @Output
+passing data from child to container component.
+```
+@Output() notify:EventEmitter<string> = new EventEmitter<string>();
+onClick(){
+  this.notify.emit('clicked');
+}
+```
+
+
+##9. Services and Dependency Injection
