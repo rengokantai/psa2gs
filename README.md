@@ -94,3 +94,21 @@ onClick(){
 
 
 ##9. Services and Dependency Injection
+
+##11. Navigation and Routing Basics
+###3 Configuring Routes
+app.module.ts
+```
+import { RouterModule } from '@angular/router';
+@NgModule({
+  imports:[
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    ROuterModule.forRoot([])
+  ],
+  declarations:[
+  ]
+})
+```
+
