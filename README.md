@@ -112,3 +112,15 @@ import { RouterModule } from '@angular/router';
 })
 ```
 
+
+##13. Angular Modules
+###1 Introduction
+###4 Declarations Array
+Truth 1
+- Every component,directive,and pipe we create must belong to one and only one angular module
+Truth 2
+- Only declare components, directives and pipes.
+Truth 3
+- Never re-declare components directives pipes that belongs to another module.
+
+###7 Providers Array
